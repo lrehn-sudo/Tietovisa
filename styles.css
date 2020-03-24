@@ -1,0 +1,226 @@
+/* Juz&Laz(c) presents: */
+
+body {
+    background-image: url("img/milky-way-2750627_960_720.jpg");
+}
+
+.mainBox {
+    border: 2px;
+    border-style: solid;
+    color: #2f1bd2;
+    border-radius: 10px;
+    margin-top: 80;
+    text-align:center;
+    padding: 5;
+    /*background-image: url("img/background.jpg");
+    background-image: url("img/illuminated-blue-spotlight-scene-background_7233-423.jpg");
+    background-image: url("img/golden-three-spotlights-stage-background_1017-23785.jpg");*/
+    background-image: url("img/illuminated-podium-presentation-dark_109064-362.jpg");
+    /*background-image: url("img/illuminated-stage-light-spotlight-scene-vector-illustration_7233-397.jpg");
+    /*background-image: url("img/spotlights-empty-scene_87202-266.jpg");
+    /*background-image: url("img/stage-spotlight-dust-blue-background_35887-315.jpg");*/
+}
+
+#questionArea {
+    font-size: 1.5em;
+    color: white;
+    position: relative;
+    margin: 4px;
+    margin-bottom:10px;
+    padding: 10px;
+    border:  1px;
+    border-style: solid;
+    border-color: #2f1bd2;
+    border-radius: 10px;
+    background: linear-gradient( #4649b9, #6db5c1);
+    box-shadow: 8px 8px 15px 3px rgba(0,0,0, 0.3);
+}
+
+.btnQuestion {
+    height: 80px;
+    width: 280px;
+    position: relative;  
+    display: inline-block;
+    color: white;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 10px;
+    border: #2f1bd2;
+    outline: none;
+    box-shadow: 5px 2px 8px 2px #100b4663;
+    background: linear-gradient(#2424d2f0, #5760c5 );
+    font-size:14pt;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.btnStart {
+        
+}
+
+button:hover {
+	background:linear-gradient( #166d3ea3, #009F6B);
+}
+
+#btnTriv_1 {
+    
+}
+
+#btnTriv_2 {
+    
+}
+
+#btnTriv_3 {
+    
+}
+#btnTriv_4 {
+    
+}
+
+#Score {
+    font-size: 14pt; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 25px;
+    margin-left: -117px;
+}
+#timeLeft {
+    font-size: 14pt;
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    margin-top: 10px;
+    margin-left: 13px;
+    box-shadow: 2px 2px black;
+    background-color: #4fa8a9db;
+    border-style: solid;
+    border: 2px;
+    border-radius: 5px;
+    border-color: black;
+    padding:10px;
+}
+
+#endGame {
+    color: #d9d9e6;
+    font-size: 14pt;
+    position: fixed;
+    top: 1%;
+    left: 28%;
+    margin-top: 10px;
+    margin-left: 20px;
+    box-shadow: 2px 2px black;
+    background-color: #de352b80;
+    border-style: solid;
+    border: 2px;
+    border-radius: 5px;
+    border-color: black;
+    padding:10px;
+}
+
+
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Video overlay contents */
+
+#content_addQuestions, #content_changeQuestions, #content_scores{
+  position: fixed;
+  top: 150;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+
+#content_Index{
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#content_top {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 0px;
+}
+
+/* Style the button used to start game */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+#audioControls {
+    position: fixed;
+    top: 1%;
+    left: 20%;
+    margin-top: 10px;
+    margin-right: 20px;   
+    visibility:hidden;  
+}
+
+#visibleAudioControls {
+    position: fixed;
+    top: 1%;
+    left: 20%;
+    margin-top: 10px;
+    margin-right: 20px;     
+}
+
+/* NavBar */
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 4px 6px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #4433e09e;}
+
+ul.topnav li a.active {background-color: #30ce9052;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 400px) {
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+}
+
