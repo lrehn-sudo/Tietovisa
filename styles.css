@@ -89,9 +89,8 @@ button:hover {
     font-size: 14pt;
     position: fixed;
     top: 1%;
-    left: 1%;
+    left: 5%;
     margin-top: 10px;
-    margin-left: 13px;
     box-shadow: 2px 2px black;
     background-color: #4fa8a9db;
     border-style: solid;
@@ -106,7 +105,7 @@ button:hover {
     font-size: 14pt;
     position: fixed;
     top: 1%;
-    left: 28%;
+    right: 5%;
     margin-top: 10px;
     margin-left: 20px;
     box-shadow: 2px 2px black;

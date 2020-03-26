@@ -33,7 +33,7 @@ Juz&Laz(c) presents:
   
         <h1>Muuta kysymyksiä ja vastauksia</h1>
         
-        <form action="change_Questions.php" method="POST" id="addQuestionArea"> 
+        <form action="changeQuestions.php" method="POST" id="addQuestionArea" autocomplete="off"> 
                     
             <div id="addQuestion">
                 <label for="questionText">
@@ -78,7 +78,7 @@ Juz&Laz(c) presents:
 </div>        
 
         <?php
-        // put your code here
+        include 'functions/connect.php';
         ?>
         
     </body>

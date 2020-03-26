@@ -35,31 +35,39 @@ Juz&Laz(c) presents:
         
         <form action="login.php" method="POST" id="addIdArea"> 
                     
-                    <div id="firstName">
-                        <label for="firstName"></label>
-                        <input type="text" id="firstName" name=firstName" placeholder="Etunimi..."><br><br>
+                    <div>
+                        <label for="firstName">Etunimi:</label><br>
+                        <input type="text" id="firstName" name=firstName" placeholder="Etunimi..." required><br><br>
                     </div>
                     
-                    <div id="lastName">
-                        <label for="lastName"></label>
-                        <input type="text" id="lastName" name="lastName" placeholder="Sukunimi..."><br><br>
+                    <div>
+                        <label for="lastName">Sukunimi:</label><br>
+                        <input type="text" id="lastName" name="lastName" placeholder="Sukunimi..." required><br><br>
                     </div>
                     
-                    <div id="nickName">
-                        <label for="nickName"></label>
-                        <input type="text" id="nickName" name="nickName" placeholder="Nimimerkki/Alias..."><br><br>
+                    <div>
+                        <label for="nickName">Nimimerkki:</label><br>
+                        <input type="text" id="nickName" name="nickName" placeholder="Nimimerkki / Alias..." required><br><br>
                     </div>
                     
-                    <div id="email">
-                        <label for="email"></label>
-                        <input type="text" id="answerText" name="email" placeholder="email..."><br><br>
+                    <div>
+                        <label for="email">Sähköposti</label><br>
+                        <input type="text" id="email" name="email" placeholder="email..." required><br><br>
                     </div>
-
-                <input type="submit" id="submitID"></input>                   
+            
+                    <div>
+                        <label for="password">Salasana</label><br>
+                        <input type="password" placeholder="Salasana" id="password" required>
+                        <input type="password" placeholder="Toista salasana" id="confirm_password" required><br><br>
+                    </div>
+        
+                    <input type="submit" id="submitID"></input>                   
                 </form>
 
-        </div>        
-
+        </div>
+        
+        <script src="script/checkPasswordsMatch.js"></script>
+        
         <?php
         // put your code here
         ?>

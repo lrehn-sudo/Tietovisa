@@ -24,20 +24,22 @@ Juz&Laz(c) presents:
              <li><a href="trivial.php">Peli</a></li>
              <li><a class="active" href="addQuestions.php">Omat kysymykset</a></li>
              <li><a href="scores.php">Tuloksia</a></li>
-             <li class="right"><a href="#about">Ohje</a></
+             <li class="right"><a href="#about">Ohje</a></li>
            </ul>
         </div>
 
+        <script src="script/validateRadio.js"></script>
+             
         <!-- Overlay content -->
         <div id="content_addQuestions">
          
         <h2>Lisää kysymyksiä ja vastauksia</h2>
         
-        <form action="add_Questions.php" method="POST" id="addQuestionArea"> 
+        <form action="addQuestions.php" onsubmit="return validateRadio()" method="POST" id="addQuestionArea" autocomplete="off"> 
                     
             <div id="addQuestion">
                 <label for="questionText">
-                <textarea name="Text1" cols="40" rows="4" id="questionText" name="questionText" placeholder="Kysymys..."></textarea><br><br>
+                    <textarea name="Text1" cols="40" rows="4" id="questionText" name="questionText" placeholder="Kysymys..." required></textarea><br><br>
             </div>
 
             <!-- TODO tähän kannattaisi lisätä Javascriptiä, jotta vastaukset voitaisiin lisätä yhdellä kentällä. 
@@ -46,25 +48,25 @@ Juz&Laz(c) presents:
 
             <div id="addAnswer_1">
                 <label for="answerText_1"></label>
-                <input type="text" id="answerText" name="answerText_1" placeholder="1. Vastaus...">
+                <input type="text" id="answerText" name="answerText_1" placeholder="1. Vastaus..." required>
                 Oikea<input type="radio" name="questionTrue" value="1" /><br><br>
             </div>
 
             <div id="addAnswer_2">
                 <label for="answerText_2"></label>
-                <input type="text" id="answerText" name="answerText_2" placeholder="2. Vastaus...">
+                <input type="text" id="answerText" name="answerText_2" placeholder="2. Vastaus..." required>
                 Oikea<input type="radio" name="questionTrue" value="2" /><br><br>
             </div>
 
             <div id="addAnswer_3">
                 <label for="answerText_3"></label>
-                <input type="text" id="answerText" name="answerText_3" placeholder="3. Vastaus...">
+                <input type="text" id="answerText" name="answerText_3" placeholder="3. Vastaus..." required>
                 Oikea<input type="radio" name="questionTrue" value="3" /><br><br>
             </div>
 
             <div id="addAnswer_4">
                 <label for="answerText_4"></label>
-                <input type="text" id="answerText" name="answerText_4" placeholder="4. Vastaus...">
+                <input type="text" id="answerText" name="answerText_4" placeholder="4. Vastaus..." required>
                 Oikea<input type="radio" name="questionTrue" value="4" /><br><br>
             </div>
 
@@ -73,10 +75,10 @@ Juz&Laz(c) presents:
 
          <p>Kysymykset:</p>
 
-        </div>        
-
+        </div>
+        
         <?php
-        // put your code here
+        include 'functions/connect.php';
         ?>
         
     </body>
