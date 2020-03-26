@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<!--
-Juz&Laz(c) presents:
--->
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +24,7 @@ Juz&Laz(c) presents:
              <li><a href="trivial.php">Peli</a></li>
              <li><a href="addQuestions.php">Omat kysymykset</a></li>
              <li><a href="scores.php">Tuloksia</a></li>
-             <li><a class="right" href="#about">Ohje</a></li>
+             <li class="right"><a href="#about">Ohje</a></li>
             </ul><br><br>
         </div>
         
@@ -37,7 +33,6 @@ Juz&Laz(c) presents:
             
         <h2>Tietopeli</h2>
         <p>Testaa tietosi leikkimielisessä kilpailussa</p>
-        <button id="myBtn" onclick="Trivial.php"> Aloita</button><br>
         
         </div>
     </body>
