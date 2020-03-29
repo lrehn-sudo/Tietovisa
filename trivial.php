@@ -1,7 +1,14 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
 
-<!--
-Juz&Laz(c) presents:
--->
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +38,6 @@ Juz&Laz(c) presents:
                     
                     <audio loop autoplay controls>
                         <source src="sound/crystal_cave.mp3" type="audio/mpeg">
-                   
                     </audio>
                   </div> 
                  

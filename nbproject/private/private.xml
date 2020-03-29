@@ -3,12 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/Tietopeli/styles.css</file>
-            <file>file:/C:/xampp/htdocs/Tietopeli/index.php</file>
-            <file>file:/C:/xampp/htdocs/Tietopeli/addQuestions.php</file>
-            <file>file:/C:/xampp/htdocs/Tietopeli/trivial.php</file>
-            <file>file:/C:/xampp/htdocs/Tietopeli/scores.php</file>
-            <file>file:/C:/xampp/htdocs/Tietopeli/changeQuestions.php</file>
+            <file>file:/C:/xampp/htdocs/Tietovisa/functions/questionFunctions.php</file>
+            <file>file:/C:/xampp/htdocs/Tietovisa/trivial.php</file>
+            <file>file:/C:/xampp/htdocs/Tietovisa/addQuestions.php</file>
+            <file>file:/C:/xampp/htdocs/Tietovisa/changeQuestions.php</file>
         </group>
     </open-files>
 </project-private>

@@ -2,6 +2,8 @@
 
 body {
     background-image: url("img/milky-way-2750627_960_720.jpg");
+    font: 14px sans-serif;
+    color: white;
 }
 
 .mainBox {
@@ -54,27 +56,8 @@ body {
     cursor: pointer;
 }
 
-.btnStart {
-        
-}
-
 button:hover {
 	background:linear-gradient( #166d3ea3, #009F6B);
-}
-
-#btnTriv_1 {
-    
-}
-
-#btnTriv_2 {
-    
-}
-
-#btnTriv_3 {
-    
-}
-#btnTriv_4 {
-    
 }
 
 #Score {
@@ -117,8 +100,6 @@ button:hover {
     padding:10px;
 }
 
-
-
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
   position: fixed;
@@ -129,18 +110,17 @@ button:hover {
 }
 
 /* Video overlay contents */
-
-#content_addQuestions, #content_changeQuestions, #content_scores{
+#content_mid {
   position: fixed;
   top: 150;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
+  
 }
 
-
-#content_Index{
+#content_bottom{
   position: fixed;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
@@ -223,3 +203,21 @@ ul.topnav li.right {float: right;}
   ul.topnav li {float: none;}
 }
 
+.glow {
+  font-family: cursive;  
+  font-size: 80px;
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}

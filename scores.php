@@ -1,12 +1,23 @@
-
 <!--
 Juz&Laz(c) presents:
 -->
+
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is already logged in, if yes then redirect him to welcome page
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+  header("location: index.php");
+  exit;
+}
+?>
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <title>Tietopeli</title>
+        <title>Tulokset</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
@@ -20,11 +31,11 @@ Juz&Laz(c) presents:
         <!-- add navbar -->
           <ul class="topnav">
              <li><a href="index.php">Alku</a></li>
-             <li><a href="login.php">Kirjaudu</a></li>
+             <li><a href="#">Ohje</a></li>
              <li><a href="trivial.php">Peli</a></li>
              <li><a href="addQuestions.php">Omat kysymykset</a></li>
              <li><a class="active" href="scores.php">Tuloksia</a></li>
-             <li class="right"><a href="#about">Ohje</a></li>
+             <li class="right"><a href="login/logout.php">Poistu</a></li>
            </ul>
         </div>
 
@@ -36,7 +47,7 @@ Juz&Laz(c) presents:
          </div> 
             
         <!-- Overlay content -->
-        <div id="content_scores">
+        <div id="content_mid">
 
           <?php
           echo "Hello Scores!";

@@ -1,7 +1,7 @@
 //---------check radiobutton is selected
 
 function validateRadio() {
-    var radios = document.getElementsByName('questionTrue');
+    var radios = document.getElementsByName('correct');
     var formValid = false;
 
     var i = 0;
